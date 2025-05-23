@@ -5,7 +5,7 @@ import time
 
 # Replace these with your credentials
 EMAIL = "utshar21@gmail.com"
-PASSWORD = "A100100#"
+PASSWORD = "My Pass"
 
 # Initialize the browser
 driver = webdriver.Chrome()
