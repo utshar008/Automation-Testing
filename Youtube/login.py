@@ -3,18 +3,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
-# Replace these with your credentials
+
 EMAIL = "utshar21@gmail.com"
 PASSWORD = "My Pass"
 
 # Initialize the browser
 driver = webdriver.Chrome()
 
-# Open YouTube
+
 driver.get("https://www.youtube.com/")
 time.sleep(2)
 
-# Click on 'Sign In'
 sign_in = driver.find_element(By.XPATH, '//*[@id="buttons"]/ytd-button-renderer/yt-button-shape/a/yt-touch-feedback-shape/div/div[2]]')
 sign_in.click()
 time.sleep(3)
@@ -33,7 +32,6 @@ password_input.send_keys(PASSWORD)
 password_input.send_keys(Keys.ENTER)
 time.sleep(5)
 
-# You should now be logged in (if no CAPTCHA or 2FA)
 print("Logged in!")
 
 # Close the browser
